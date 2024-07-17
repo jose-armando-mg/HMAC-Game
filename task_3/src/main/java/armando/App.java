@@ -5,6 +5,10 @@ import java.util.Scanner;
 class  App{
 
 	public static void main(String[] args) throws Exception  {
+		if(args.length<=1){
+			System.out.println("\nERROR!!! NOT ENOUGH ARGUMENTS WERE GIVEN\nYoo should give more than one argument, for example:\n\njava Task3 one two three");
+			System.exit(0);
+		}
 		for (int i = 0; i < args.length - 1; i++) {
             for (int j = i + 1; j < args.length; j++) {
                 if (args[i].equals(args[j])) {

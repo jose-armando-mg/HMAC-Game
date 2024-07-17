@@ -12,7 +12,7 @@ public class TableGenerator {
         AsciiTable table = new AsciiTable();
         table.addRule();
         List<String> header = new ArrayList<>();
-        header.add("");
+        header.add(" v PC/USER >");
         header.addAll(moves);
         table.addRow(header.toArray());
         table.addRule();
